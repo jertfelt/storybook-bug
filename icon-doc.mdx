@@ -1,0 +1,17 @@
+import { Meta, Story, Canvas, Controls } from '@storybook/blocks';
+import {IconButton as ImportedIconButton } from "./icon-button.stories"
+
+<Canvas of={ImportedIconButton} story={{
+    inline: false,
+  }}
+  source={{
+    language: 'html',
+    format:"dedent",
+    type:"dynamic",
+    code:""
+  }}
+  withToolbar={true}
+  layout="fullscreen"
+  className="custom-class"/>
+
+  <Controls of={ImportedIconButton}/>
